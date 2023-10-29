@@ -1,0 +1,50 @@
+body {
+  background-color: #0d6efd14;
+  padding-top: 10px;
+}
+ol.cd-breadcrumb {
+  padding: 7px 0px;
+  display: inline-block;
+}
+.cd-breadcrumb::after {
+  clear: both;
+  content: "";
+  display: table;
+}
+.cd-breadcrumb li {
+  display: inline-block;
+  float: left;
+}
+.cd-breadcrumb li::after {
+  /* this is the separator between items */
+  display: inline-block;
+  content: "\00bb";
+  margin: 0 0.6em;
+  color: #959fa5;
+}
+.cd-breadcrumb li:last-of-type::after {
+  /* hide separator after the last item */
+  display: none;
+}
+.cd-breadcrumb li > * {
+  /* single step */
+  display: inline-block;
+  font-size: 14px;
+  color: #2c3f4c;
+  text-decoration: none;
+}
+.cd-breadcrumb li.current > * {
+  /* selected step */
+  color: #96c03d;
+  font-weight: 600;
+}
+.ticket-table a,
+.ticket-table span {
+  color: #0dbee1;
+  font-weight: 600;
+  text-decoration: none;
+}
+.card {
+  border: 0;
+  border-top: 3px solid blue !important;
+}
