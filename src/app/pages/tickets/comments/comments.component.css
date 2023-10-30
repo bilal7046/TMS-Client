@@ -1,0 +1,117 @@
+body {
+    background-color: #0d6efd14;
+    padding-top: 10px;
+  }
+  ol.cd-breadcrumb {
+    padding: 7px 0px;
+    display: inline-block;
+  }
+  .cd-breadcrumb::after {
+    clear: both;
+    content: "";
+    display: table;
+  }
+  .cd-breadcrumb li {
+    display: inline-block;
+    float: left;
+  }
+  .cd-breadcrumb li::after {
+    /* this is the separator between items */
+    display: inline-block;
+    content: "\00bb";
+    margin: 0 0.6em;
+    color: #959fa5;
+  }
+  .cd-breadcrumb li:last-of-type::after {
+    /* hide separator after the last item */
+    display: none;
+  }
+  .cd-breadcrumb li > * {
+    /* single step */
+    display: inline-block;
+    font-size: 14px;
+    color: #2c3f4c;
+    text-decoration: none;
+  }
+  .cd-breadcrumb li.current > * {
+    /* selected step */
+    color: #96c03d;
+    font-weight: 600;
+  }
+  .ticket-table {
+    font-size: 14px;
+    line-height: 1.2;
+    color: gray;
+  }
+  .table > :not(caption) > * > * {
+    color: gray;
+  }
+  .ticket-table a {
+    color: #67a4fb;
+    font-weight: 600;
+    text-decoration: none;
+  }
+  .card {
+    margin-bottom: 20px;
+    border: 0;
+    border-top: 3px solid blue !important;
+  }
+  .user-image {
+    color: #67a4fb;
+    font-size: 62px;
+  }
+  .badge-span.bg-danger {
+    padding: 2px 4px;
+    margin-left: 0;
+  }
+  .icon-div {
+    background-color: lightgray;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .badge-span {
+    padding: 4px 7px;
+    color: white;
+    border-radius: 7px;
+    margin-left: 5px;
+    font-size: 14px;
+    background-color: #0dbee1;
+    font-weight: 600;
+  }
+  .fa-clock-o {
+    font-size: 41px;
+    color: #51c18d;
+  }
+
+  .badge-span {
+    padding: 2px 5px;
+    color: white;
+    border-radius: 7px;
+    margin-left: 0px;
+    font-size: 10px;
+    background-color: #0dbee1;
+    font-weight: 600;
+  }
+  .icon-div-right {
+    background-color: lightgray;
+    width: 100%;
+    padding: 10px;
+    text-align: center;
+  }
+  .icon-div-right .user-image {
+    font-size: 42px;
+  }
+  .right-side strong {
+    display: inline-block;
+    margin-right: 5px;
+    min-width: 94px;
+    margin-bottom: 10px;
+  }
+  .card.active {
+    background-color: #81818129;
+    border-color: #212529 !important;
+  }
+  .card.active .bg-white {
+    background: transparent !important;
+  }

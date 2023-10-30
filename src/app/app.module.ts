@@ -12,6 +12,7 @@ import { FooterModule } from './shared/footer/footer.module';
 import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { ListComponent } from './pages/priority/list/list.component';
+import { CommentsComponent } from './pages/tickets/comments/comments.component';
 
 
 @NgModule({
@@ -19,6 +20,7 @@ import { ListComponent } from './pages/priority/list/list.component';
         AppComponent,
         AdminLayoutComponent,
         ListComponent,
+        CommentsComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],
