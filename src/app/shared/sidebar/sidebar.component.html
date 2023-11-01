@@ -20,8 +20,6 @@
     <!-- Divider -->
     <hr class="sidebar-divider">
 
-   
-
     <li class="nav-item">
         <a class="nav-link collapsed"  data-toggle="collapse" data-target="#collapsetickets"
             aria-expanded="true" aria-controls="collapsetickets">
@@ -55,6 +53,7 @@
             </div>
         </div>
     </li>
+    <hr class="sidebar-divider">
     <li class="nav-item">
         <a class="nav-link collapsed"  data-toggle="collapse" data-target="#collapseusers"
             aria-expanded="true" aria-controls="collapseusers">
@@ -64,6 +63,19 @@
         <div id="collapseusers" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
             <div class="bg-white py-2 collapse-inner rounded">  
                 <a class="collapse-item" routerLink="user-list">Users</a>
+            </div>
+        </div>
+    </li>
+    <hr class="sidebar-divider">
+    <li class="nav-item">
+        <a class="nav-link collapsed"  data-toggle="collapse" data-target="#collapseadmin"
+            aria-expanded="true" aria-controls="collapseadmin">
+            <i class="fas fa-fw fa-cog"></i>
+            <span>Admin</span>
+        </a>
+        <div id="collapseadmin" class="collapse" aria-labelledby="headingTwo" data-parent="#accordionSidebar">
+            <div class="bg-white py-2 collapse-inner rounded">  
+                <a class="collapse-item" routerLink="admin-list">Tickets</a>
             </div>
         </div>
     </li>

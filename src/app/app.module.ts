@@ -13,6 +13,7 @@ import { RouterModule } from '@angular/router';
 import { AppRoutes } from './app.routing';
 import { ListComponent } from './pages/priority/list/list.component';
 import { CommentsComponent } from './pages/tickets/comments/comments.component';
+import { AdminListComponent } from './pages/tickets/admin-list/admin-list.component';
 
 
 @NgModule({
@@ -21,6 +22,7 @@ import { CommentsComponent } from './pages/tickets/comments/comments.component';
         AdminLayoutComponent,
         ListComponent,
         CommentsComponent,
+        AdminListComponent,
     ],
     providers: [],
     bootstrap: [AppComponent],

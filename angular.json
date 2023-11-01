@@ -9,13 +9,24 @@
       "root": "",
       "sourceRoot": "src",
       "prefix": "app",
+      "i18n": {
+        "sourceLocale":"en-US",
+        "locales": {
+          "es": {
+            "translation":"/src/locale/messages.es.xlf",
+            "baseHref": ""
+          }
+        }},
+      
       "architect": {
         "build": {
           "builder": "@angular-devkit/build-angular:browser",
           "options": {
+            
             "outputPath": "dist/tms",
             "index": "src/index.html",
             "main": "src/main.ts",
+            
             "polyfills": [
               "zone.js"
             ],
@@ -29,6 +40,7 @@
             ],
             "scripts": []
           },
+         
           "configurations": {
             "production": {
               "budgets": [
@@ -44,6 +56,9 @@
                 }
               ],
               "outputHashing": "all"
+            },
+            "es":{
+              "localize":["es"]
             },
             "development": {
               "buildOptimizer": false,
@@ -64,6 +79,9 @@
             },
             "development": {
               "browserTarget": "TMS:build:development"
+            },
+            "es":{
+             "browserTarget": "TMS:build:es"
             }
           },
           "defaultConfiguration": "development"

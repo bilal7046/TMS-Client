@@ -6,6 +6,7 @@ import { UserListComponent } from "src/app/pages/UserAndRoles/user-list/user-lis
 import { DashboardComponent } from "src/app/pages/dashboard/dashboard.component";
 import { CreateComponent } from "src/app/pages/priority/create/create.component";
 import { ListComponent as PriorityListComponent} from "src/app/pages/priority/list/list.component";
+import { AdminListComponent } from "src/app/pages/tickets/admin-list/admin-list.component";
 import { CommentsComponent } from "src/app/pages/tickets/comments/comments.component";
 import { CreateTicketComponent } from "src/app/pages/tickets/create-ticket/create-ticket.component";
 import { ListComponent as TicketsListComponent  } from "src/app/pages/tickets/list/list.component";
@@ -22,4 +23,5 @@ export const AdminLayoutRoutes: Routes = [
     { path: 'role-list',      component: RoleListComponent },
     { path: 'tickets-list',      component: TicketsListComponent },
     { path: 'comments',      component: CommentsComponent },
+    { path: 'admin-list',      component: AdminListComponent },
 ];
